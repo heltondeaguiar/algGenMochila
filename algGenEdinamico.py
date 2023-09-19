@@ -84,8 +84,7 @@ def comparar_algoritmos(n_execucoes):
         taxa_mutacao = np.random.uniform(0.01 ,0.05)
 
         # Executa o algoritmo genético e armazene o resultado
-        melhor_individuo = algoritmo_genetico(itens,tam_pop,n_geracoes,
-                                              taxa_mutacao,capacidade)
+        melhor_individuo = algoritmo_genetico(itens,tam_pop,n_geracoes, taxa_mutacao,capacidade)
         resultado_genetico = aptidao(melhor_individuo ,itens,capacidade)
 
         # Executa o algoritmo dinâmico e armazene o resultado
